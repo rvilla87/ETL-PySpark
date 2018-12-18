@@ -27,7 +27,7 @@ Read this guide in order to install Hadoop on Windows: https://wiki.apache.org/h
 
 Some notes to consider:
 - Spark and Hadoop and **require Java**. JDK 8 64bits worked for me.
-- **JAVA_HOME** must match our Java downloaded version (in my case 1.8.0_131). "Progra\~1" for 32bits path installation and "Progra\~2" for 64bits.
+- **JAVA_HOME** must match our Java downloaded version (in my case 1.8.0_131). "Progra\~1" for 64bits path installation and "Progra\~2" for 32bits.
 - **PYTHONPATH** is the path were Python will look for additional libraries. In this case, is set to look for the spark ones.
 - In **PATH** variable, *%PATH%* means the same PATH value we already have. Basically add the new paths at the beginning of the PATH value.
 - In order to avoid troubles, we should set **hadoop.tmp.dir** in file *\hadoop\etc\hadoop\core-site.xml* with Hadoop tmp directory we want (note that drive letter is preceded by /). For example:
